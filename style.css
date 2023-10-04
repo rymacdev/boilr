@@ -183,6 +183,12 @@ section#masthead {
     font-weight: 800;
     font-size: 1rem;
 }
+.card .icons-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    gap: .45rem;
+}
 
 @media (max-width: 768px) {
     .cards-container {
@@ -198,5 +204,14 @@ footer {
 
 footer .logo-text {
     padding: 0;
-  }
+}
 
+/* Page Elements */
+
+.divider-line {
+    border: 1px dotted var(--clr-primary);
+}
+
+footer a:after, a::after {
+    all: unset;
+}
