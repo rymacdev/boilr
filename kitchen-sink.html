@@ -37,7 +37,7 @@
             <ul id="main-menu">
                 <li class="current hover-underline"><a href="#">Home</a></li>
                 <li class="hover-underline"><a href="#">About Us</a></li>
-                <li class="hover-underline"><a href="#portfolio">Portfolio</a></li>
+                <li class="hover-underline"><a href="#">Products</a></li>
                 <li class="hover-underline"><a href="#">Contact</a></li>
             </ul>
             <img src="images/moon-regular-24.png" alt="dark-mode-toggle" id="dark-mode-toggle">
@@ -48,19 +48,15 @@
     <section id="masthead" class="row padding-top-bottom-sm">
         <div class="container boxed stacked">
             <h1 class="tagline title">
-                A digital creator of beautiful UI and clever frontend work with strong foundation in storytelling and branding.
+                I combine
             </h1>
-            <div class="container">
-                <button href="#" class="btn btn-primary content-fit">Work Experience</button>
-                <a href="#portfolio" class="btn btn-secondary content-fit">View examples gallery</a>
-            </div>
         </div>
     </section>
 
     <!-- Content -->
     <section class="row content padding-top-bottom-sm">
         <div class="container boxed stacked">
-            <h2>The Importance of CSS in Building and Styling Modern Websites</h2>
+            <h1 class="title">The Importance of CSS in Building and Styling Modern Websites</h1>
             <p>In the world of web development, CSS (Cascading Style Sheets) plays a crucial role in building and styling modern websites. While HTML provides the structure and content of a webpage, CSS takes web design to the next level by enabling developers to customize the appearance and layout of their sites. In this article, we will delve into the significance of CSS and explore why it is an essential tool for creating visually appealing and user-friendly websites.</p>
 
             <!-- Cards/boxes -->
@@ -174,7 +170,7 @@
             <div class="divider-line margin-top-bottom-md"></div>
 
             <!-- Images gallery -->
-            <div id="portfolio" class="full">
+            <div class="full">
                 <h2>Portfolio</h2>
             </div>
             <div id="gallery01" class="container gallery-container padding-top-bottom-md padding-left-right-none box-rounded">
@@ -262,6 +258,73 @@
             <p>CSS follows the principle of separation of concerns, allowing developers to separate the structure and content (HTML) from the presentation (CSS) of a webpage. This separation makes the codebase more modular, maintainable, and easier to update. By making changes solely in the CSS file, developers can update the design across multiple web pages without modifying the HTML code, reducing the chances of errors and saving time in the long run.</p>
             <p>CSS provides the ability to define styles once and apply them to multiple elements. Through the use of classes and IDs, developers can create reusable styles that can be applied to various elements throughout the website. This not only ensures consistency in design but also improves development efficiency, as it eliminates the need to write repetitive styling code.</p>
             
+            <!-- Accordions -->
+            <div class="accordions-container">
+                <div class="accordion active">
+                    <div class="accordion-header">
+                        <p>This is an accordion item. This is visible by default.</p>
+                        <div class="accordion-toggle"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Accordion content header</h3>
+                        <p>CSS provides the ability to define styles once and apply them to multiple elements. Through the use of classes and IDs, developers can create reusable styles that can be applied to various elements throughout the website. This not only ensures consistency in design but also improves development efficiency, as it eliminates the need to write repetitive styling code.</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <p>This is an accordion item. This is hidden by default.</p>
+                        <div class="accordion-toggle"></div>
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Accordion content header</h3>
+                        <p>CSS provides the ability to define styles once and apply them to multiple elements. Through the use of classes and IDs, developers can create reusable styles that can be applied to various elements throughout the website. This not only ensures consistency in design but also improves development efficiency, as it eliminates the need to write repetitive styling code.</p>
+                        <div class="container gallery-container padding-top-bottom-md padding-left-right-none box-rounded">
+                            <div class="gallery-item">
+                                <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
+                                <img src="images/image16.jpg" alt="">
+                            </div>
+                            <div class="gallery-item">
+                                <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
+                                <img src="images/image17.jpg" alt="">
+                            </div>
+                            <div class="gallery-item">
+                                <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>   
+                                <img src="images/image18.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <p>This is an accordion item. This is hidden by default.</p>
+                        <div class="accordion-toggle"></i></div>
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Accordion content header</h3>
+                        <p>CSS provides the ability to define styles once and apply them to multiple elements. Through the use of classes and IDs, developers can create reusable styles that can be applied to various elements throughout the website. This not only ensures consistency in design but also improves development efficiency, as it eliminates the need to write repetitive styling code.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider-line margin-top-bottom-md"></div>
+
+            <!-- Carousel -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-items">
+                        <div class="carousel-item">Content for this carousel item.</div>
+                        <div class="carousel-item">Content for this carousel item.</div>
+                        <div class="carousel-item">Content for this carousel item.</div>
+                        <div class="carousel-item">Content for this carousel item.</div>
+                        <div class="carousel-item">Content for this carousel item.</div>
+                    </div>
+                </div>
+                <div class="carousel-controller">
+                    <button class="carousel-btn btn-left"><i class='bx bxs-chevron-left'></i></button>
+                    <button class="carousel-btn btn-right"><i class='bx bxs-chevron-right'></i></button>
+                </div>
+            </div>
+            
             <h2>Adaptability and Future-Proofing</h2>
             <p>CSS is a versatile language that offers a wide range of features and properties, allowing developers to implement complex design requirements. With CSS, designers can create responsive layouts, incorporate animations and transitions, and apply media queries to target specific devices or screen sizes. This flexibility enables websites to adapt to evolving design trends and technological advancements.</p>
             <p>CSS is supported by all modern web browsers, making it a reliable choice for web development. Additionally, CSS3 introduced vendor prefixes and feature detection, which help ensure consistent rendering of styles across different browsers. By leveraging CSS, developers can build websites that are compatible with a wide range of browsers and devices, reaching a broader audience.</p>
@@ -289,7 +352,7 @@
         <div class="footer-info">
             <div class="logo">
                 <box-icon name='hot' type="solid"></box-icon>
-                <p class="logo-text">Ryan Macalandag</p>
+                <p class="logo-text">CSS Boilerplate</p>
             </div>
             <p class="copyright">This website boilerplate was developed by Ryan Macalandag using HTML, CSS and Javascript.</p>
             <p class="copyright">Simple open-source icons are from <a href="https://boxicons.com/">Boxicons.</a></p>

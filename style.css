@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 body {
     font-family: Lato, Verdana, sans-serif;
@@ -9,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Bitter, 'Lucida sans', serif;
+    font-family: 'Young Serif', 'Lucida sans', serif;
     font-weight: 500;
 }
 
@@ -24,17 +25,21 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     color: var(--clr-neutral-black);
     background-color: var(--clr-neutral-lightest);
+    --primary-hue: 180;
+    --primary-sat: 30%;
+    --secondary-hue: calc(var(--primary-hue) * 2.2);
+    --secondary-sat: calc(var(--primary-sat) * 3);
 
-    --clr-primary: hsl(280, 85%, 30%);
-    --clr-primary-accent: hsl(295, 85%, 30%);
-    --clr-primary-light: hsl(280, 30%, 55%);
-    --clr-primary-white: hsl(280, 30%, 95%);
-    --clr-primary-dark: hsl(280, 45%, 10%);
+    --clr-primary: hsl(var(--primary-hue), var(--primary-sat), 20%);
+    --clr-primary-accent: hsl(calc(var(--primary-hue) - 20), 65%, 30%);
+    --clr-primary-light: hsl(var(--primary-hue), 20%, 85%);
+    --clr-primary-white: hsl(var(--primary-hue), 10%, 90%);
+    --clr-primary-dark: hsl(var(--primary-hue), 45%, 10%);
     
 
-    --clr-secondary: hsl(50, 85%, 50%);
-    --clr-secondary-light: hsl(50, 85%, 90%);
-    --clr-secondary-dark: hsl(50, 85%, 10%);
+    --clr-secondary: hsl(var(--secondary-hue), var(--secondary-sat), 40%);
+    --clr-secondary-light: hsl(var(--secondary-hue), var(--secondary-sat), 90%);
+    --clr-secondary-dark: hsl(var(--secondary-hue), var(--secondary-sat), 10%);
 
     --clr-neutral: hsl(0, 0%, 45%);
     --clr-neutral-light: hsl(0, 0%, 65%);
@@ -58,15 +63,15 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--clr-neutral-lightest);
     background-color: var(--clr-primary-dark);
 
-    --clr-primary: hsl(280, 85%, 30%);
-    --clr-primary-accent: hsl(295, 85%, 30%);
-    --clr-primary-light: hsl(280, 85%, 95%);
-    --clr-primary-white: hsl(280, 85%, 95%);
-    --clr-primary-dark: hsl(280, 45%, 10%);
+    --clr-primary: hsl(var(--primary-hue), var(--primary-sat), 30%);
+    --clr-primary-accent: hsl(calc(var(--primary-hue) - 30), 65%, 30%);
+    --clr-primary-light: hsl(var(--primary-hue), 20%, 90%);
+    --clr-primary-white: hsl(var(--primary-hue), 20%, 25%);
+    --clr-primary-dark: hsl(var(--primary-hue), 45%, 10%);
 
-    --clr-secondary: hsl(50, 85%, 50%);
-    --clr-secondary-light: hsl(50, 85%, 90%);
-    --clr-secondary-dark: hsl(50, 85%, 10%);
+    --clr-secondary: hsl(var(--secondary-hue), var(--secondary-sat), 50%);
+    --clr-secondary-light: hsl(var(--secondary-hue), var(--secondary-sat), 90%);
+    --clr-secondary-dark: hsl(var(--secondary-hue), var(--secondary-sat), 10%);
 
     --clr-transparent: transparent;
     --clr-shadow: 1px 10px 25px -10px rgba(0,0,0,0.5);
@@ -101,3 +106,27 @@ a.reverse {
     text-decoration: none;
 }
 
+/* Masthead */
+
+section#masthead {
+    min-height: calc(80dvh);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary-white);
+    position: relative;
+    overflow: hidden;
+}
+
+#blob-01 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Content */
+
+.content h2 {
+    font-size: 2.35rem;
+}
