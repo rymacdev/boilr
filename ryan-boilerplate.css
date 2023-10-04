@@ -1060,6 +1060,7 @@ footer p {
 
 .box-rounded > * {
     border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .box-clear {
