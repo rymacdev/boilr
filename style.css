@@ -133,6 +133,10 @@ section#masthead {
     overflow: hidden;
 }
 
+section#masthead h1.title {
+    margin: 1rem 0;
+}
+
 @media (max-width: 768px) {
     section#masthead {
         min-height: fit-content;
