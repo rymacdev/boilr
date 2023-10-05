@@ -107,3 +107,26 @@ function filterGallery(filterBy) {
         } else item.style.display = "none";
     });
 }   
+
+// Color Picker
+
+const colorPicker01 = document.querySelector('.color-1');
+const colorPicker02 = document.querySelector('.color-2');
+const colorPicker03 = document.querySelector('.color-3');
+const colorPicker04 = document.querySelector('.color-4');
+const rootElement = document.querySelector(':root');
+
+console.log(rootElement);
+
+colorPicker01.addEventListener('click', () => {
+    rootElement.style.setProperty('--primary-hue', 180);
+});
+colorPicker02.addEventListener('click', () => {
+    rootElement.style.setProperty('--primary-hue', 280);
+});
+colorPicker03.addEventListener('click', () => {
+    rootElement.style.setProperty('--primary-hue', 80);
+});
+colorPicker04.addEventListener('click', () => {
+    rootElement.style.setProperty('--primary-hue', 340);
+});
