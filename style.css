@@ -124,6 +124,7 @@ a.reverse {
 .logo-text {
     font-family: 'Nanum Pen Script', cursive;
     font-size: 2.2rem;
+    line-height: 2.7rem;
 }
 
 /* Masthead */
