@@ -190,13 +190,14 @@ img#dark-mode-toggle:hover {
 
 @media (max-width: 768px) {
     nav.primary-header {
-        padding: 1rem 1.5rem;
+        padding: 1rem 1rem;
     }
 
     nav.primary-header.scrolling {
         width: calc(100% - 2rem);
         margin: 1rem;
         top: 1rem;
+        padding: 1rem 1.5rem;
     }
 
     #main-menu-toggle.active .bar {
@@ -265,6 +266,10 @@ img#dark-mode-toggle:hover {
 
     img#dark-mode-toggle {
         margin: 1rem 0;
+    }
+
+    .logo-text {
+        padding: 0;
     }
 }
 

@@ -68,18 +68,6 @@ closeButtons.forEach(closeButton => {
     })
 });
 
-// Accordion
-
-const accordionToggles = document.querySelectorAll('.accordion-toggle');
-
-accordionToggles.forEach (accordionToggle => {
-    const accordionParent = accordionToggle.closest('.accordion');
-
-    accordionToggle.addEventListener('click', () => {
-        accordionParent.classList.toggle('active');
-    })
-})
-
 // Lighbox
 
 const lightbox = document.getElementById('lightbox');
@@ -102,4 +90,3 @@ fullScreenButton.forEach (openButton => {
 lightboxCloseButton[0].addEventListener('click', () => {
     lightbox.classList.remove('active');
 })
-
