@@ -209,7 +209,7 @@ img#dark-mode-toggle:hover {
     #main-menu-toggle.active .bar-01 {
         transform: rotate(45deg);
         position: absolute;
-        top: 44px;
+        top: 41px;
     }
 
     #main-menu-toggle.active .bar-02 {
@@ -407,6 +407,7 @@ footer p {
 
 .card p {
     padding: 0 2rem;
+    line-height: 1.85rem;
 }
 
 .card button {
