@@ -90,3 +90,20 @@ fullScreenButton.forEach (openButton => {
 lightboxCloseButton[0].addEventListener('click', () => {
     lightbox.classList.remove('active');
 })
+
+// Filter portfolio
+
+function filterGallery(filterBy) {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    // lowercase
+    // filterBy.toLower();
+
+    console.log(filterBy);
+
+    galleryItems.forEach(item => {
+        if(item.dataset.category.includes(filterBy)) {
+            item.style.display = "flex";
+        } else item.style.display = "none";
+    });
+}   

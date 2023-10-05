@@ -113,6 +113,7 @@
                     <div class="icons-container">
                         <iconify-icon icon="skill-icons:wordpress" width="32" height="32"></iconify-icon>
                         <iconify-icon icon="logos:salesforce" width="32" height="32"></iconify-icon>
+                        <iconify-icon icon="mdi:hubspot" width="32" height="32"></iconify-icon>     
                     </div>
                 </div>
             </div>
@@ -122,53 +123,61 @@
             <!-- Images gallery -->
             <div id="portfolio" class="full">
                 <h2>Portfolio</h2>
+                <div class="filter-container">
+                    <button onclick="filterGallery('')" class="btn btn-filter">All</button>
+                    <button onclick="filterGallery('uiux')" class="btn btn-filter">UI/UX</button>
+                    <button onclick="filterGallery('tailwind')" class="btn btn-filter">Tailwind</button>
+                    <button onclick="filterGallery('frontend')" class="btn btn-filter">Frontend</button>
+                    <button onclick="filterGallery('wordpress')" class="btn btn-filter">Wordpress</button>
+                    <button onclick="filterGallery('react')" class="btn btn-filter">React</button>
+                </div>
             </div>
             <div id="gallery01" class="container gallery-container padding-top-bottom-md padding-left-right-none box-rounded">
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="wordpress php mysql">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
-                    <img src="images/image13.jpg" alt="">
+                    <img src="images/image01.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="javascript react">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
                     <img src="images/image14.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="html css">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>   
                     <img src="images/image15.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="wordpress">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
                     <img src="images/image04.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
                     <img src="images/image05.jpg" alt="">
                 </div>
-                <div class="gallery-item">   
+                <div class="gallery-item" data-category="wordpress">   
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>   
                     <img src="images/image06.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
                     <img src="images/image07.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
                     <img src="images/image08.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>   
                     <img src="images/image09.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
                     <img src="images/image10.jpg" alt="">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item" data-category="">
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>
                     <img src="images/image11.jpg" alt="">
                 </div>
-                <div class="gallery-item">   
+                <div class="gallery-item" data-category="">   
                     <button class="btn-full-screen box-shadow"><i class='bx bx-fullscreen'></i></button>   
                     <img src="images/image12.jpg" alt="">
                 </div>

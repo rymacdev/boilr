@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Colors  */
 
 :root {
-    color: var(--clr-neutral-black);
+    color: var(--clr-neutral-dark);
     background-color: var(--clr-neutral-lightest);
     --primary-hue: 180;
     --primary-sat: 30%;
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dark-mode {
-    color: var(--clr-neutral-lightest);
+    color: var(--clr-neutral-lighter);
     background-color: var(--clr-primary-dark);
 
     --clr-primary: hsl(var(--primary-hue), var(--primary-sat), 20%);
@@ -126,7 +126,9 @@ section#masthead {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: var(--clr-primary-white);
+    /* background-color: var(--clr-primary-white); */
+    background: var(--clr-primary-white);
+    background: linear-gradient(55deg, rgba(255,255,255,.5) 0%, var(--clr-primary-white) 32%, var(--clr-primary-white) 100%); 
     position: relative;
     overflow: hidden;
 }
@@ -186,14 +188,30 @@ section#masthead {
 .card .icons-container {
     display: flex;
     flex-direction: row;
-    padding: 1rem 2rem;
-    gap: .45rem;
+    padding: 1.65rem 2rem 1rem;
+    gap: 1.45rem;
+    overflow: auto;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
     .cards-container {
         grid-template-columns: repeat(2, auto);
     }
+}
+
+/* Portfolio */
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-filter {
+    border: none;
+    border-radius: 5rem;
+    transform: scale(.85);
 }
 
 /* Footer */

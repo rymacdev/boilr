@@ -380,10 +380,13 @@ footer p {
     flex-direction: column;
     border-radius: var(--border-radius-min);
     border: 2px solid var(--clr-primary);
-    color: var(--clr-neutral-black);
     position: relative;
     padding-bottom: 1rem;
     height: fit-content;
+}
+
+.dark-mode .card {
+    border: 2px solid var(--clr-primary);
 }
 
 .card .card-image {
@@ -1078,10 +1081,6 @@ footer p {
     border-color: var(--clr-neutral-light) !important;
     color: var(--clr-neutral-light) !important;
     cursor: not-allowed !important;
-}
-
-.dark-mode .card {
-    color: var(--clr-primary-light);
 } 
 
 /* Hover Animations - Utility */
