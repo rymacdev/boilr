@@ -103,21 +103,3 @@ lightboxCloseButton[0].addEventListener('click', () => {
     lightbox.classList.remove('active');
 })
 
-// Carousel
-
-const carouselItems = document.querySelector('.carousel-items');
-const carouselItemsWidth = carouselItems.clientWidth;
-const itemWidth = document.querySelectorAll('.carousel-item')[0].clientWidth;
-const leftButton = document.querySelector('.carousel-btn.btn-left');
-// const translateX = carouselItems.computedStyleMap.translateX;
-
-console.log(carouselItems);
-
-leftButton.addEventListener('click', () => {
-    carouselItems.scrollLeft = 567;
-    console.log(itemWidth);
-    console.log(carouselItemsWidth);
-    
-    
-})
-
