@@ -81,7 +81,7 @@ h1.title {
 @media (max-width: 768px) {
 
     section, footer {
-        padding: 2rem 1rem !important;
+        padding: 2rem 1.5rem !important;
     }
 
     .container {
@@ -190,12 +190,12 @@ img#dark-mode-toggle:hover {
 
 @media (max-width: 768px) {
     nav.primary-header {
-        padding: 1rem 1rem;
+        padding: 1rem 1.5rem;
     }
 
     nav.primary-header.scrolling {
-        width: calc(100% - 2rem);
-        margin: 1rem;
+        width: calc(100% - 3rem);
+        margin: 1rem 1.5rem;
         top: 1rem;
         padding: 1rem 1.5rem;
     }
@@ -209,7 +209,7 @@ img#dark-mode-toggle:hover {
     #main-menu-toggle.active .bar-01 {
         transform: rotate(45deg);
         position: absolute;
-        top: 42px;
+        top: 44px;
     }
 
     #main-menu-toggle.active .bar-02 {
